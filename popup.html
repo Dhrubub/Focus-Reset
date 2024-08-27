@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Focus Reset</title>
+		<style>
+			/* General H1 Styles */
+			h1 {
+				color: #599b5e;
+				opacity: 0;
+				transition: opacity 0.5s ease-in-out; /* Smooth opacity change */
+			}
+
+			/* Specific IDs for each H1 */
+			#reset {
+				opacity: 1; /* Initially visible */
+			}
+
+			#restart,
+			#refocus {
+				opacity: 0; /* Initially hidden */
+			}
+			body {
+				margin: auto;
+				text-align: center;
+				padding: 0pt 20pt;
+			}
+
+			h1 {
+				padding: 10pt 0pt;
+				font-size: 36pt; /* Larger font size for tab page */
+				margin: 0 auto;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="reset">Reset</h1>
+		<h1 id="restart">Restart</h1>
+		<h1 id="refocus">Refocus</h1>
+
+		<!-- Reference the external script -->
+		<script src="script.js"></script>
+	</body>
+</html>
